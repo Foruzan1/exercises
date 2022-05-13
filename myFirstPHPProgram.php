@@ -77,3 +77,4 @@ function console_log($output, $with_script_tags = true) {
     echo $js_code;
 }
 echo 'hello';
+echo 'hello world';
