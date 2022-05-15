@@ -57,11 +57,11 @@ function inventory($cup){
             }elseif ($products[$i][$j] === $cup && $products[$i][1] >= 20 && $products[$i][2] >= 1){
                 $view_variable = $products[$i][2];
                 console_log($view_variable);
-                print 'This product will be delivered free of charge because it costs more that 20 €.';
+                print 'This product will be delivered free of charge because it costs more that 20 €';
             } elseif ($products[$i][$j] === $cup && $products[$i][1] < 20){
                 $view_variable = $products[$i][2];
                 console_log($view_variable);
-                print '<br>This product will be delivered 5€ because it costs more that 20 €<br>';
+                print '<br>This product will be delivered 5€ because it costs less that 20 €<br>';
             }
         }
     }
@@ -76,5 +76,10 @@ function console_log($output, $with_script_tags = true) {
     }
     echo $js_code;
 }
-echo 'hello';
-echo 'hello world';
+function sqrt1(){
+    $rand = rand(1,100);
+    echo $rand .'<br>';
+    echo sqrt($rand) .'<br>';
+    print floor(sqrt($rand));
+}
+sqrt1();
