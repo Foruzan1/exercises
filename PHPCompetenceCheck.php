@@ -117,3 +117,4 @@ if($handle) {
 } else {
     print "Datei konnte nicht geöffnet werden.<br>\n";
 }
+
